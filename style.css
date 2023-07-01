@@ -1,0 +1,551 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    font-size: 48px;
+    font-family: 'Arial', sans-serif;
+    color: #000;
+    text-align: center;
+    position: relative;
+  }
+  
+  h1::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: transparent;
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 70px #00ff00, 0 0 80px #00ff00, 0 0 100px #00ff00;
+    animation: neon-animation 1.5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes neon-animation {
+    0% {
+      text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 70px #00ff00, 0 0 80px #00ff00, 0 0 100px #00ff00;
+    }
+    100% {
+      text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 70px #00ff00, 0 0 80px #00ff00, 0 0 100px #00ff00;
+    }
+  }
+  
+      
+/* .front-page{
+    background-color: beige;
+} */
+.front-page{
+    background-color: beige;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.Saikat-image{
+    margin-bottom: 20px;
+}
+#intro1{
+    font-family: 'Dancing Script', cursive;
+    font-size: xxx-large; 
+}
+#intro2{
+    text-align: center;
+    width: 80%;
+    font-size: xx-large;
+}
+
+.education{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.institutions{
+    display: grid;
+    grid-template-rows:50% 50%;
+    grid-template-columns:50% 50%;
+    height: 100%;
+}
+
+.education-title{
+text-align: center;
+font-size: xxx-large;
+}
+/* for dy patil */
+.DY{
+    display: grid;
+    grid-template-columns: 210px auto;
+}
+.dypu-img{
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+}
+.dypu-img-div{
+    display: flex;
+    align-items: center;
+}
+.dypu-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* for model college */
+.model-clg{
+    display: grid;
+    grid-template-columns: 210px auto;
+}
+.model-img{
+    height: 250px;
+    width: 200px;
+    object-fit: contain;
+
+}
+.model-img-div{
+    display: flex;
+    align-items: center;
+}
+.model-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* for stps */
+.stps{
+    display: grid;
+    grid-template-columns: 210px auto;
+}
+.stps-img{
+    height: 250px;
+    width: 230px;
+    object-fit: contain;
+
+}
+.stps-img-div{
+    display: flex;
+    align-items: center;
+}
+.stps-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-me-title{
+    padding: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: xxx-large;
+}
+
+.contact-details{
+    display: flex;
+    justify-content: center;   
+}
+.contact-me{
+    background-color: beige;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+/* EMAIL neon light animation */
+
+.email {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #f2a60c;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+
+.email:hover {
+    color: #f2a60c;
+    background: #c71610;
+    box-shadow: 0 0 10px #f2a60c, 0 0 40px #f2a60c, 0 0 80px #f2a60c;
+    transition-delay: 1s;
+}
+
+
+.email span {
+    position: absolute;
+    display: block;
+}
+
+
+
+
+.email span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #f2a60c);
+}
+
+
+
+.email:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+
+.email span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #f2a60c);
+}
+
+.email:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+
+
+.email span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #f2a60c);
+}
+
+.email:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+
+
+.email span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #f2a60c);
+}
+
+.email:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+} 
+/* LINKEDIN neon light animation */
+ 
+ .linkedin {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #2196f3;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+
+.linkedin:hover {
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 1s;
+}
+
+
+.linkedin span {
+    position: absolute;
+    display: block;
+}
+
+
+
+
+.linkedin span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+}
+
+
+
+.linkedin:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+
+.linkedin span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2196f3);
+}
+
+.linkedin:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+
+
+.linkedin span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #2196f3);
+}
+
+.linkedin:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+
+
+.linkedin span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #2196f3);
+}
+
+.linkedin:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}  
+
+/* INSTAGRAM neon light animation */
+.instagram {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #E4405F;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.instagram:hover {
+    color: #500303;
+    background: #E4405F;
+    box-shadow: 0 0 10px #E4405F, 0 0 40px #E4405F, 0 0 80px #E4405F;
+    transition-delay: 1s;
+}
+
+.instagram span {
+    position: absolute;
+    display: block;
+}
+
+.instagram span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #E4405F);
+}
+
+.instagram:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+.instagram span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #E4405F);
+}
+
+.instagram:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+.instagram span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #E4405F);
+}
+
+.instagram:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.instagram span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #E4405F);
+}
+
+.instagram:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+
+
+/* MEDIA QUERIES */
+/* phone potrait */
+@media (max-width: 480px) {
+    .Saikat-image{
+        height: 200px;
+        width: 200px;
+    }
+        #intro1{
+            font-family: 'Dancing Script', cursive;
+            font-size: xx-large;
+            text-align: center;
+        }
+        #intro2{
+            text-align: center;
+            width: 100%;
+            font-size: x-large;
+        }    
+        .institutions{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .institutions p{
+            font-size: larger;
+        }
+        .contact-me-title{
+            padding: 0;
+        }
+
+        .contact-me{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+        .contact-details{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .education{
+            height: 100%;
+            width: 100%;
+        }
+        .DY, .model-clg, .stps{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border: 5px solid;
+            
+        }
+        .dypu-text>h2, .model-text>h2, .stps-text>h2{
+            font-size: 1.3em;
+        }
+
+        
+}
+
+/* phone landscape*/
+@media  (min-width: 481px) and (max-width: 767px) {
+    .institutions{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        font-size: x-large;
+    }
+    .stps, .DY, .model-clg{
+        border: 5px solid;
+    }
+}
+/* tablet potrait */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .institutions{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        font-size: x-large;
+    }
+    .stps, .DY, .model-clg{
+        border: 5px solid;
+    }
+    .institutions p{
+        font-size: xx-large;
+    }
+    .model-img{
+        width: 195px;
+    }
+
+}
+
+
+/* tablet landscape */
+@media  (min-width: 880px) and (max-width:1180px) and (orientation: landscape) {
+    .institutions{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        font-size: x-large;
+    }
+    .stps, .DY, .model-clg{
+        border: 5px solid;
+        text-align: center;
+    }
+    .institutions p{
+        font-size: xx-large;
+    }
+    .dypu-img {
+        height: 328px;
+        width: 407px;
+        object-fit: contain;
+    }
+    .model-img {
+        height: 332px;
+        width: 346px;
+        object-fit: contain;
+    }
+  }
+   
